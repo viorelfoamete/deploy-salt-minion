@@ -1,0 +1,24 @@
+1.  To apply this state, run the following command:
+
+    ```
+    [root@master salt]#  salt-ssh minion-to-be-added state.apply install_salt_minion
+
+    ```
+
+2.  Check that minion's key is pending for acceptance by using the `salt-key` command:
+
+    ```
+    [root@master salt]# salt-key -l un
+    Unaccepted Keys:
+        minion-to-be-added
+
+    ```
+
+3.  To complete the minion's configuration, accept its public key:
+
+    ```
+    [root@master salt]# salt-key -a minion-to-be-added
+
+    ```
+
+    Once the minion key is accepted, the minion is fully configured and ready for command execution.
