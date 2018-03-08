@@ -1,4 +1,4 @@
-Set Up Salt Roster File[Permalink](https://linode.com/docs/applications/configuration-management/configure-and-use-salt-ssh/#set-up-salt-roster-file "Permalink")
+Set Up Salt Roster File
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 The Roster file contains target system information, connection details and credentials. The Default location for the Roster file is: `/etc/salt/roster`.
@@ -13,13 +13,6 @@ The Roster file contains target system information, connection details and crede
 
     /etc/salt/roster
 
-    |
-
-    ```
-    1234
-    ```
-
-     |
 
     ```
     minion-to-be-added:
@@ -28,7 +21,7 @@ The Roster file contains target system information, connection details and crede
          passwd: <password>
     ```
 
-     |
+
 
     > Note
     >
@@ -38,13 +31,6 @@ The Roster file contains target system information, connection details and crede
 
     /etc/salt/roster
 
-    |
-
-    ```
-    12345
-    ```
-
-     |
 
     ```
     #This is an example of minimal host definition using private key:
@@ -66,31 +52,18 @@ The Roster file contains target system information, connection details and crede
 
     /etc/sudoers
 
-    |
-
-    ```
-    1
-    ```
-
-     |
-
     ```
     # Defaults requiretty
     ```
-
-     |
 
     b. Force TTY allocation by setting the `tty: True` option in your Roster file:
 
     /etc/salt/roster
 
-    |
-
     ```
     123456
     ```
 
-     |
 
     ```
     minion-to-be-added:
@@ -101,7 +74,6 @@ The Roster file contains target system information, connection details and crede
         tty: True
     ```
 
-     |
 
     > Note
     >
