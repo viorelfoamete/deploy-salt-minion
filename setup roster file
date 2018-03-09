@@ -95,5 +95,3 @@ The Roster file contains target system information, connection details and crede
     > Note
     >
     > If SSH keys weren't deployed, you may receive the `The host key needs to be accepted, to auto accept run salt-ssh with the -i flag:` message. In this case just run `salt-ssh` with -i flag. This key will let Salt automatically accept a minion's public key. This has to be done only once, during the initial SSH keys exchange.
-
-    
